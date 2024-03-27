@@ -1,11 +1,11 @@
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import requests
 from datetime import datetime
 
-load_dotenv()
-TOKEN = os.environ.get('PIXELA_TOKEN')
-USERNAME = os.environ.get("USERNAME")
+# load_dotenv()
+TOKEN = os.environ.get['PIXELA_TOKEN']
+USERNAME = os.environ.get["USERNAME"]
 GRAPH_ID = 'graph1'
 # weblink https://pixe.la/v1/users/aad3rinto/graphs/graph1.html
 # USED TO CREATE CREDENTIALS
