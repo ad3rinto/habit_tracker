@@ -39,13 +39,14 @@ headers = {
 
 # posting a value to the graph
 # today = datetime(year=2021, month=10, day=13)
-today = datetime.today()
+today = datetime(year=2024, month=3, day=28)
 print(today.strftime('%Y%m%d'))
 #
+quan = input("Provide quantity: ")
 graph_post_pixel_endpoint = f'{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}'
 post_pixel_params = {
     'date': today.strftime('%Y%m%d'),
-    'quantity': '1500'
+    'quantity': quan
 }
 
 response = requests.post(url=graph_post_pixel_endpoint, json=post_pixel_params, headers=headers)
