@@ -39,7 +39,7 @@ headers = {
 
 # posting a value to the graph
 # today = datetime(year=2021, month=10, day=13)
-today = datetime(year=2024, month=3, day=28)
+today = datetime.now()
 print(today.strftime('%Y%m%d'))
 #
 quan = input("Provide quantity: ")
