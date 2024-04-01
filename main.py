@@ -55,9 +55,20 @@ post_pixel_params = {
 New endpoint and params for PUT request
 
 """
-graph_put_pixel_endpoint = f'{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{today}'
-put_pixel_params = {
+# graph_put_pixel_endpoint = f'{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{today}'
+# put_pixel_params = {
+#     'quantity': quan
+# }
+# response = requests.put(url=graph_put_pixel_endpoint, json=put_pixel_params, headers=headers)
+# print(response.text)
+
+"""
+New endpoint and params for DELETE request
+
+"""
+graph_delete_pixel_endpoint = f'{pixela_endpoint}/{USERNAME}/graphs/{GRAPH_ID}/{today}'
+delete_pixel_params = {
     'quantity': quan
 }
-response = requests.put(url=graph_put_pixel_endpoint, json=put_pixel_params, headers=headers)
+response = requests.delete(url=graph_delete_pixel_endpoint, headers=headers)
 print(response.text)
